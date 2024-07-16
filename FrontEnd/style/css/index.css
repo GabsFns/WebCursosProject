@@ -1,0 +1,586 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Koulen;
+    src: url(../font/Koulen-Regular.ttf);
+}
+@font-face {
+    font-family: One;
+    src: url(../font/GasoekOne-Regular.ttf);
+}
+@font-face {
+    font-family: Staat;
+    src: url(../font/Staatliches-Regular.ttf);
+}
+
+body, .LogoWhite, .ListaNav, .Title, .Desc, .bttCursosArt, .bttCadArt {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.BackEscuro{
+    background-color: #1b1b1b;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: end;
+    padding: 20px;
+    margin: 0px 0px 50px 0px;
+}
+.logoBlack{
+    color: #ffffff;
+   
+}
+header h1{
+    font-family: Staat;
+    letter-spacing: 8px;
+    
+}
+header nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul > li{
+    list-style: none;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #F2CB05;
+    border: 1px solid black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    width: 140px;
+    border-radius: 30px 0px 0px 0px;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #FullStack,#BackEnd1,#FrontEnd,#BackEnd2,#Ciencia,#DataBase1,
+  #DataBase2,#Mobile, #Ciber,#Persona{
+    transition: all 0.2s ease-in;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #f2cb05d8;
+  }
+  #FullStack:hover {
+    background-color: #ffe66ad8;
+  }
+  #BackEnd1:hover{
+    background-color: rgb(132, 185, 255)
+  }
+  #BackEnd2:hover{
+    background-color: rgb(132, 185, 255)
+  }
+  #FrontEnd:hover{
+    background-color: rgb(222, 255, 173);
+  }
+  #Ciencia:hover{
+    background-color: rgb(190, 255, 233);
+  }
+  #DataBase1:hover{
+    background-color: rgb(107, 98, 163);
+  }
+  #DataBase2:hover{
+    background-color: rgb(107, 98, 161);
+  }
+  #Mobile:hover{
+    background-color: rgb(255, 221, 179);
+  }
+  #Ciber:hover{
+    background-color: rgb(255, 191, 191);
+  }
+  #Persona:hover{
+    background-color: black;
+    color: white;
+  }
+
+.ListaNavBlack{
+    color: white;
+}
+
+.BttMudarCor{
+    border: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+.BttMudarCorWhite{
+    filter: invert(100%);
+}
+#bttPlanos{
+    background-color: #F2CB05;
+    width: 120px;
+    padding: 18px;
+    border-radius: 0px 0px 20px 0px;
+    border: none;
+    
+}
+
+#bttCadHeader{
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    margin: 0px 0px 0px 20px;
+    cursor: pointer;
+}
+#bttEntrar{
+    background-color: #F2F2F2;
+    border: none;
+    width: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#LandingPg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 70px 0px 0px;
+}
+#TextArt{
+    padding: 20px 0px 0px 80px;
+    width: 600px;
+}
+.TitleEscuro{
+    font-family: Roboto;
+    font-size: 56px;
+    margin: 0px;
+    color: white;
+}
+.DescEscuro{
+    font-family: Poppins;
+    color: white;
+
+}
+.TitleEscuro span{
+    font-family: Staat;
+    letter-spacing: 8px;
+    margin: 0px 0px 0px 10px;
+}
+.TitleEscuro #hub{
+    background-color: #F2CB05;
+    color: #000000;
+    padding: 2px 10px;
+    margin: 0;
+}
+#TextArt h1{
+    font-family: Roboto;
+    font-size: 56px;
+    margin: 0px;
+}
+#TextArt p{
+    font-family: Poppins;
+
+}
+#TextArt button{
+    padding: 12px;
+    width: 200px;
+    font-family: Poppins;
+    border-radius: 20px;
+}
+#TextArt span{
+    font-family: Staat;
+    letter-spacing: 8px;
+    margin: 0px 0px 0px 10px;
+}
+#TextArt #hub{
+    background-color: #F2CB05;
+    padding: 2px 10px;
+    margin: 0;
+}
+.BttArt{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    
+}
+#bttCursosArt{
+    background-color: #F2CB05;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+#bttCadArt{
+    background-color: #0D0D0D;
+    border: 1px solid #F2E7AC;
+    color: white;
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.CardCursos{
+    margin: 80px 0px 0px 0px;
+    text-align: center;
+    font-family: Staat;
+    letter-spacing: 6px;
+    font-size: 28px;
+    background-color: #000000;
+    border-radius: 80px 0px 0px 0px;
+    padding: 10px 10px 100px 10px;
+}
+.CardCursos h1{
+    color: white;
+}
+.CardCursosBlack{
+    margin: 80px 0px 0px 0px;
+    text-align: center;
+    font-family: Staat;
+    letter-spacing: 6px;
+    font-size: 28px;
+    background-color: #F2CB05;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 10px 15px 0px #fde66593,
+                0px 14px 18px 0px rgba(245, 222, 179, 0.479);
+    padding: 60px 20px;
+    background-color: #1f1f1f;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0px;
+    
+    
+}
+.card h2{
+    font-family: Roboto;
+    font-size: 18px;
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+.bttCursoCard{
+    font-family: Poppins;
+    background-color: #F2CB05;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin: auto;
+}
+.DescricaoCard{
+    color: #F2CB05;
+    margin: 10px 0px 0px 0px;
+}
+.PrecoMensalCard{
+   font-size: 18px;
+   color: #f2a705;
+   margin: 0px;
+
+}
+.PrecoAnualCard{
+    font-size: 14px;
+    color: #f2a705;
+}
+
+.imgCurso{
+    width: 350px;
+    height: 200px;
+}
+.AbaExplicativaCaixa ul h2{
+    margin: 10px 0px;
+    font-family: Roboto;
+}
+.StyleBall{
+    padding: 5px 6px;
+    border-radius: 80px 0px 80px 0px ;
+    background-color: #F2CB05;
+    margin: 0px 20px 0px 0px;
+
+}
+.styleTracoBall{
+    display: flex;
+    gap: 10px;
+    font-family: Poppins;
+}
+
+.traco{
+    padding: 40px 2px;
+    background-color: #F2F2F2;
+    margin: 10px 30px;
+}
+.AbaExplicativa{
+    display: flex;
+    justify-content: space-between;
+}
+.AbaExplicativaCaixa ul{
+    width: 700px;
+}
+.AbaExplicativaCaixa h1{
+    font-family: Staat;
+    letter-spacing: 4px;
+    font-size: 38px;
+    margin: 70px;
+}
+#ImageExplicativa{
+    width: 500px;
+    height: 500px;
+}
+#BarraLateral{
+    background-color: #F2CB05;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 0px 70px;
+    
+    
+}
+
+.cardProfessor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+
+}
+.cardProfessor p,h4{
+    font-family: Poppins;
+    margin: 10px;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+.container-prof h3{
+    font-family: Poppins;
+    text-align: center;
+    font-size: 24px;
+}
+.imgProfessor{
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+.container-prof h2{
+    font-family: Staat;
+    letter-spacing: 4px;
+    font-size: 38px;
+    text-align: left;
+    margin: 0px 20px;
+    margin: 100px 20px 40px 20px;
+}
+hr{
+    
+    padding: 8px;
+    background-color: #F2CB05;
+    border: none;
+    max-width: 92%;
+    min-width: 85%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.459);
+}
+.AbaFeedBack{
+    padding: 20px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: #F2CB05;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.438);
+}
+.AbaFeedBack > h2{
+    font-size: 34px;
+    font-family: Staat;
+    letter-spacing: 6px;
+}
+.AbaFeedBack article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.AbaFeedBack article > p{
+    width: 700px;
+    font-family: Poppins;
+    text-align: center;
+}
+.AbaFeedBack article p > span{
+    background-color: #000000;
+    color: white;
+    padding: 4px;
+}
+.AbaFeedBack article > h2{
+    font-family: Roboto;
+}
+.AbaFeedBack #bttModalFeed{
+    padding: 10px;
+    width: 200px;
+    margin: 0px 0px 80px 0px;
+    font-size: 16px;
+    font-family: Poppins;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+.AbaFeedBack #bttModalFeed:hover{
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+#ModalFeed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 31, 31, 0.54);
+    opacity: 0; /* Inicialmente transparente */
+    visibility: hidden; /* Inicialmente invisível */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
+  }
+  
+  #ModalFeed.abrir {
+    opacity: 1; /* Totalmente opaco */
+    visibility: visible; /* Visível */
+  }
+  
+  #modal {
+    display: flex;
+    width: 550px;
+    height: 550px;
+    flex-direction: column;
+    background-color: rgba(218, 218, 218, 0.712);
+    backdrop-filter: blur(5px);
+    border-radius: 30px 0px 30px 30px;
+    padding: 20px;
+    position: relative; /* Necessário para posicionar o botão de fechar */
+    transform: rotateY(-90deg) scale(0.7); /* Inicialmente fora de vista com rotação e escala menor */
+    transition: transform 0.5s ease; /* Transição suave */
+  }
+  #modal h2{
+    color: rgb(0, 0, 0) ;
+    font-family: Roboto;
+    margin: 0px 0px 10px 0px;
+  }
+  #modal form{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #modal form input{
+    padding: 6px;
+    outline: none;
+    margin: 0px 0px 10px 0px;
+  }
+  #modal form label{
+    font-family: Poppins;
+    font-size: 12px;
+  }
+  #modal form > #BttEnviarFeed{
+    padding: 8px;
+    width: 120px;
+    background-color: #F2CB05;
+    border: #000000;
+    margin: 20px 0px;
+
+  }
+  #modal h4{
+    font-size: 14px;
+    font-family: Roboto;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+  }
+  #modal p{
+    font-size: 12px;
+    font-family: Poppins;
+    margin: 0;
+    text-align: justify;
+  }
+  #DescModal{
+    max-width: 550px;
+    min-width: 350px;
+  }
+  #DescModal ul{
+    font-size: 12px;
+    font-family: Poppins;
+  }
+  #ModalFeed.abrir #modal {
+    transform: rotateY(0deg) scale(1); /* Escala e rotação normais */
+  }
+
+  .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #F2CB05;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  footer{
+    background-color: #1b1b1b;
+    padding: 10px;
+  }

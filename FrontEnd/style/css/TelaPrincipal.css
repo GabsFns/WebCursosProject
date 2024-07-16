@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Koulen;
+    src: url(../font/Koulen-Regular.ttf);
+}
+@font-face {
+    font-family: One;
+    src: url(../font/GasoekOne-Regular.ttf);
+}
+@font-face {
+    font-family: Staat;
+    src: url(../font/Staatliches-Regular.ttf);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    box-sizing: border-box;
+}
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #f3cd0d;
+    border-radius: 0 80px 20px 0;
+    padding: 10px 2px;
+    transition: width 0.3s ease-in;
+}
+
+.side-bar:hover {
+    width: 240px
+}
+
+.side-bar h2 {
+    margin: 2px;
+    font-size: 18px;
+    text-align: left;
+    padding: 6px 0px;
+    color: white;
+    font-family: Staat;
+    letter-spacing: 2px;
+    background-color: #f3cd0d;
+    transition: opacity 0.3s, padding 0.3s;
+    opacity: 0;
+    width: 170px;
+
+}
+
+.side-bar:hover h2 {
+    opacity: 1;
+    padding: 10px 10px;
+}
+
+.side-bar nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px;
+    padding: px;
+    margin-top: 40px;
+    gap: 20px 0px
+    ;
+    padding-inline-start: 10px;
+    padding: 0;
+    background-color: #f3cd0d;
+    width: 100%;
+    align-items: center;
+}
+
+.side-bar nav > p {
+    background-color: #f3cd0d;
+    width: 100%;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: left;
+    font-family: Roboto;
+    transition: opacity 0.3s;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.user-email{
+    color: white;
+    background-color: #f3cd0d;
+    font-family: Roboto;
+    font-size: 12px;
+    opacity: 0;
+    margin: 3px;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.side-bar:hover .user-email{
+    opacity: 1;
+}
+
+.side-bar:hover #BttOff{
+    opacity: 1;
+}
+.side-bar:hover nav > p {
+    opacity: 1;
+}
+.side-bar:hover button p {
+    opacity: 1;
+}
+.side-bar nav > hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 0.5px solid white;
+}
+
+.side-bar nav > button {
+    background-color: rgba(255, 255, 255, 0.834);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: 0px;
+    font-family: Poppins;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.side-bar nav > button:hover {
+    background-color: #6494bc;
+}
+
+#BttOff {
+    background: black;
+    color: white;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+a{
+    text-decoration: none;
+}
+button img{
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.139);
+    margin: 0px 20px 0px 0px;
+    opacity: 1;
+}
+button p{
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 12px;
+}
+
+#logOffimg{
+    filter: invert(100%);
+}
